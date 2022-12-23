@@ -1,9 +1,16 @@
-let name;
-name = "Some Name"
+// if statement
 
-let age=20;
+let score = 68;
 
+if(score > 79){
+    document.write("A")
+} else if(score > 69) {
+    document.write("B")
+} else if(score > 59) {
+    document.write("C")
+} else if(score > 49) {
+    document.write("D")
+} else {
+    document.write("F")
+}
 
-console.log(name)
-console.log('Age: ', age)
-document.write(name)
