@@ -1,2 +1,9 @@
-document.write("<h1><i>Hello, JavaScript (External)</i></h1>")
-document.write("<p>JavaScript Basic</p>")
+let name;
+name = "Some Name"
+
+let age=20;
+
+
+console.log(name)
+console.log('Age: ', age)
+document.write(name)
