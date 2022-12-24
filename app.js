@@ -1,14 +1,7 @@
+number = 77;
 
-
-
-// Switch... case...
-month = "May"
-switch(month) {
-    case "Jan": console.log("January");
-        break;
-    case "Feb": console.log("Febuary");
-        break;
-    case "Mac": console.log("Mach");
-        break;
-    default: break;
+if ((number % 2) == 0) {
+    console.log("Even")
+} else {
+    console.log("Odd")
 }
