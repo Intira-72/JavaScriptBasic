@@ -14,3 +14,6 @@ if(score > 79){
     document.write("F")
 }
 
+// Ternary Operator
+gread = score > 70 ? "PASS" : "NOT PASS"
+console.log(gread)
