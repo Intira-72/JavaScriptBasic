@@ -1,11 +1,23 @@
-// null, undefined NaN
+// function
 
-let a;
-let b = null;
+function print() {
+    console.log("HELLO WORLD")
+}
 
-let x="x";
-let c=10 + x;
+function msg() {
+    alert("msg alert")
+}
 
-console.log("a is " + a)
-console.log("b is " + b)
-console.log("c is " + c)
+function displayName() {
+    document.write("My Name...")
+}
+
+function cal(num1, num2) {
+    console.log(num1 + num2);
+}
+
+function get_ip() {
+    return "127.0.0.1"
+}
+
+console.log(get_ip());
