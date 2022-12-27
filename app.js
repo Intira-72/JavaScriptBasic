@@ -1,23 +1,18 @@
-// function
+// array
 
-function print() {
-    console.log("HELLO WORLD")
-}
+let colors = ['Red', 'White', 'Blue', 'Yellow']
+let fruits = ['มะม่วง', 'แอปเปิ้ล', 'กล้วย', 'ทุเรียน']
 
-function msg() {
-    alert("msg alert")
-}
+console.log("Count :", colors.length)
 
-function displayName() {
-    document.write("My Name...")
-}
+console.log("Before :", colors)
+console.log("After :", colors.sort())
 
-function cal(num1, num2) {
-    console.log(num1 + num2);
-}
+console.log("First :", colors[0])
+console.log("End :", colors[colors.length - 1])
 
-function get_ip() {
-    return "127.0.0.1"
-}
+console.log("Sort :", fruits.sort())
+console.log("Reverse :", fruits.reverse())
 
-console.log(get_ip());
+fruits.push("ส้ม")
+console.log("Add new member :", fruits)
