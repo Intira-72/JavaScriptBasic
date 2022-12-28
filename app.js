@@ -1,12 +1,13 @@
-// Object
+// Object (Method)
 
-let product = {
-    name: "Mouse",
-    price: 1500,
-    color: "Black",
-    category: "Computer",
-    size: "M"
+let user = {
+    first_name: "Kong",
+    last_name: "Raksiam",
+    age: 30,
+    email: "kong@gmail.com",
+    getFullName(){
+        return this.first_name + " " + this.last_name
+    }
 };
 
-console.log("Product Name :", product.name);
-console.log("Unit Price :", product.price);
+console.log(user.getFullName());
