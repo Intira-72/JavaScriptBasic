@@ -5,7 +5,7 @@ let user = {
     last_name: "Raksiam",
     age: 30,
     email: "kong@gmail.com",
-    getFullName(){
+    getFullName:function(){
         return this.first_name + " " + this.last_name
     }
 };
