@@ -1,13 +1,10 @@
-// Object (Method)
+// Confirm Dialog
 
-let user = {
-    first_name: "Kong",
-    last_name: "Raksiam",
-    age: 30,
-    email: "kong@gmail.com",
-    getFullName:function(){
-        return this.first_name + " " + this.last_name
+function deleteData(){
+    let result = confirm("Do you want to delete the data?");
+    if(result){
+        alert("Data has been deleted.");
+    }else{
+        alert("Data deletion has been cancelled.");
     }
 };
-
-console.log(user.getFullName());
