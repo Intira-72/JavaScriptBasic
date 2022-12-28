@@ -1,10 +1,18 @@
-// Confirm Dialog
+// DOM
 
-function deleteData(){
-    let result = confirm("Do you want to delete the data?");
-    if(result){
-        alert("Data has been deleted.");
+let a = document.getElementById("demo");
+let b = document.querySelector('.myjs');
+let c = document.querySelectorAll("p")
+
+let x = 10;
+let y = 10;
+
+function textChange(){
+    if(a.innerText == "kongruksiam"){
+        a.innerHTML = `X: ${x}, Y: ${y}`;
     }else{
-        alert("Data deletion has been cancelled.");
-    }
+        a.innerText = "kongruksiam"
+    };      
 };
+
+console.log(c)
