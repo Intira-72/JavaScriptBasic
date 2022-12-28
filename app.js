@@ -1,15 +1,12 @@
-// Array Sort
+// Object
 
-let points = [20, -5, -2, 40, 100, -500, 150];
+let product = {
+    name: "Mouse",
+    price: 1500,
+    color: "Black",
+    category: "Computer",
+    size: "M"
+};
 
-console.log(points)
-
-// .sort() A-Z
-console.log("Sort :", points.sort(function(a, b){
-    return a - b
-}))
-
-// .reverse() Z-A
-console.log("Reverse :", points.reverse(function(a, b){
-    return b - a
-}))
+console.log("Product Name :", product.name);
+console.log("Unit Price :", product.price);
