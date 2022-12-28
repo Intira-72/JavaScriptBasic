@@ -9,12 +9,18 @@
     <!-- Internal JavaScript -->
     <script type="text/javascript">
         document.write("<h1>Hello, JavaScript (Internal)</h1>");
-    </script>    
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <button onclick="textChange();">Change Text</button>
-    <p id="demo">kongruksiam</p>
-    <p class="myjs">My JavaScript</p>
+    <button id="btn-mode" onclick="displayText();">goto Dark Mode</button>
+    <p id="title">KongRuksiam</p>
+    <p class="content">JS Baisc</p>
+    <p>Something...</p>
+    <div class="light">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa nesciunt nihil aut nostrum explicabo reprehenderit optio amet ab temporibus asperiores quasi cupiditate. Voluptatum ducimus voluptates voluptas?</p>
+    </div>
 
     <!-- External JavaScript -->
     <script src="app.js"></script>

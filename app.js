@@ -1,18 +1,21 @@
-// DOM
+// DOM Style
 
-let a = document.getElementById("demo");
-let b = document.querySelector('.myjs');
-let c = document.querySelectorAll("p")
+const btn_mode = document.getElementById("btn-mode")
+const title = document.getElementById("title");
+const content = document.querySelector(".content");
+const allEl = document.querySelectorAll("p");
+const box = document.querySelector(".light")
 
-let x = 10;
-let y = 10;
-
-function textChange(){
-    if(a.innerText == "kongruksiam"){
-        a.innerHTML = `X: ${x}, Y: ${y}`;
+function displayText(){
+    // title.style.color = "red";
+    // title.style.backgroundColor = "yellow";
+    // title.style.fontSize = "60px";
+    
+    if (box.className == 'light'){
+        btn_mode.innerText = "goto Light Mode"
+        box.setAttribute('class', 'dark')
     }else{
-        a.innerText = "kongruksiam"
-    };      
+        btn_mode.innerText = "goto Dark Mode"
+        box.setAttribute('class', 'light')
+    }        
 };
-
-console.log(c)
