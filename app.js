@@ -1,8 +1,16 @@
-// ForEach
+// Array To Stringdocument.write
 
-let colors = ['Red', 'White', 'Blue', 'Yellow']
-colors.forEach(myData)
+let color_ls = ['Red', 'Green', 'Blue', 'Orange', 'Pink', 'Black', 'White']
 
-function myData(item){
-    console.log(item);
-};
+console.log("color_ls type :", typeof(color_ls));
+console.log("color_ls data : ", color_ls);
+
+let color = color_ls.toString();
+console.log(".toString() : ", color);
+
+console.log(".join('*') : ", color_ls.join("*"));
+
+let last_value = color_ls.pop()
+console.log("after .pop() : ", color_ls);
+console.log("last_value : ", last_value);
+
