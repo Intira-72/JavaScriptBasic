@@ -1,7 +1,8 @@
-// array ForLoop
+// ForEach
 
 let colors = ['Red', 'White', 'Blue', 'Yellow']
+colors.forEach(myData)
 
-for(let i=0; i < colors.length; i++) {
-    console.log(i, colors[i])
-}
+function myData(item){
+    console.log(item);
+};
