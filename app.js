@@ -1,16 +1,11 @@
-// Array To Stringdocument.write
+// Array concat
 
-let color_ls = ['Red', 'Green', 'Blue', 'Orange', 'Pink', 'Black', 'White']
+let fruits = ["ส้ม", "องุ่น"]
+let vegetables = ["คะน้า", "ผักชี", "ผักกาด"]
+let kitchen = ["จาน", "ชาม", "ช้อน", "ส้อม"]
+console.log("Fruit :", fruits)
+console.log("Vegetables :", vegetables)
+console.log("Kitchen :", kitchen)
 
-console.log("color_ls type :", typeof(color_ls));
-console.log("color_ls data : ", color_ls);
-
-let color = color_ls.toString();
-console.log(".toString() : ", color);
-
-console.log(".join('*') : ", color_ls.join("*"));
-
-let last_value = color_ls.pop()
-console.log("after .pop() : ", color_ls);
-console.log("last_value : ", last_value);
-
+let carts = fruits.concat(vegetables, kitchen)
+console.log("Carts :", carts)
