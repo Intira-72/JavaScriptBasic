@@ -1,11 +1,15 @@
-// Array concat
+// Array Sort
 
-let fruits = ["ส้ม", "องุ่น"]
-let vegetables = ["คะน้า", "ผักชี", "ผักกาด"]
-let kitchen = ["จาน", "ชาม", "ช้อน", "ส้อม"]
-console.log("Fruit :", fruits)
-console.log("Vegetables :", vegetables)
-console.log("Kitchen :", kitchen)
+let points = [20, -5, -2, 40, 100, -500, 150];
 
-let carts = fruits.concat(vegetables, kitchen)
-console.log("Carts :", carts)
+console.log(points)
+
+// .sort() A-Z
+console.log("Sort :", points.sort(function(a, b){
+    return a - b
+}))
+
+// .reverse() Z-A
+console.log("Reverse :", points.reverse(function(a, b){
+    return b - a
+}))
