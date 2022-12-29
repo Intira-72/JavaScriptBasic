@@ -1,21 +1,17 @@
-// DOM Style
+// DOM Nodes
 
-const btn_mode = document.getElementById("btn-mode")
-const title = document.getElementById("title");
-const content = document.querySelector(".content");
-const allEl = document.querySelectorAll("p");
-const box = document.querySelector(".light")
+const textAll = document.querySelectorAll("p")
+console.log(textAll);
 
-function displayText(){
-    // title.style.color = "red";
-    // title.style.backgroundColor = "yellow";
-    // title.style.fontSize = "60px";
-    
-    if (box.className == 'light'){
-        btn_mode.innerText = "goto Light Mode"
-        box.setAttribute('class', 'dark')
-    }else{
-        btn_mode.innerText = "goto Dark Mode"
-        box.setAttribute('class', 'light')
-    }        
+let msg = textAll[1].innerHTML
+console.log(msg);
+
+const menu = document.getElementById('menu');
+let count = 1;
+
+function addItem(){
+    const item = document.createElement('li');
+    item.innerText = "Coffee " + count;
+    menu.appendChild(item)
+    count++
 };
