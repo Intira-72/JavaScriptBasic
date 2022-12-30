@@ -1,26 +1,18 @@
-// DOM Nodes create, remove, append, replace
+// DOM CSS Add & Remove Class
 
-const menu = document.getElementById('menu');
-let count = 1;
+const box = document.getElementById('box')
+let o_status;
 
-function addItem(){ 
-    const item_list = document.createElement('li');   
-    item_list.innerText = "Coffee " + count;
-    item_list.id = "coffee_" + count++
-    menu.appendChild(item_list)
-};
+function setDarkMode(){
+    box.classList.add('darkMode')
+}
 
-function delItem(){
-    item = document.getElementById("coffee_" + --count)
-    menu.removeChild(item)
-};
+function removeDarkMode(){
+    box.classList.remove('darkMode')
+}
 
-function replaceItem(){
-    item = document.getElementById("coffee_" + --count)
-
-    item_b = document.createElement('li')
-    item_b.innerText = "Bekery_" + count
-    item_b.id = "bekery_" + count
-    
-    menu.replaceChild(item_b, item)
-};
+function switchMode(){
+    box.classList.toggle("darkMode")
+    o_status = box.classList.contains("darkMode")
+    console.log(o_status);
+}

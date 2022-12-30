@@ -1,14 +1,8 @@
-.kong {
-    color: purple;
+.darkMode {
+    border: 1px solid #fff;
     background-color: black;
-}
-
-.light {
-    background-color: orange;
-    color: black;
-}
-
-.dark {
-    background-color: purple;
     color: white;
+    padding: 30px;
+    margin: 10px;
 }
+
