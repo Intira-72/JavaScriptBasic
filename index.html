@@ -13,10 +13,14 @@
     
     <link rel="stylesheet" href="styles.css">
 </head>
-<body onload="welcome();">
+<body>
     <div id="box">
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro doloribus accusamus distinctio aut fugiat tempora vel consequuntur mollitia, corporis omnis debitis harum dicta hic, rem recusandae explicabo repellat dolore eaque?</p>
-    </div>  
+    </div>
+    
+    <label for="name">Your Name :</label>
+    <input id="name" type="text" placeholder="Please enter your name."
+    onfocus="hightlight(this)" onblur="unhightlight(this)">
 
     <!-- External JavaScript -->
     <script src="app.js"></script>
