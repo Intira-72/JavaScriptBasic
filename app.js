@@ -1,8 +1,9 @@
 // DOM Event
 
- function getmenu(){
-    const menu = document.getElementById("menu")
-    const display = document.getElementById("display")
+ function setBold(obj){
+    obj.style.fontWeight = "bold";
+ };
 
-    display.innerText = menu.value;
+ function unBold(obj){
+    obj.style.fontWeight = "normal";
  };
