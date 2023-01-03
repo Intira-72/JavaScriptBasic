@@ -1,9 +1,8 @@
 // DOM Event
 
- function hightlight(obj){
-    obj.style.background="yellow";
- };
+ function getmenu(){
+    const menu = document.getElementById("menu")
+    const display = document.getElementById("display")
 
- function unhightlight(obj){
-    obj.style.background="none";
+    display.innerText = menu.value;
  };

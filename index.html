@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="box">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro doloribus accusamus distinctio aut fugiat tempora vel consequuntur mollitia, corporis omnis debitis harum dicta hic, rem recusandae explicabo repellat dolore eaque?</p>
-    </div>
-    
-    <label for="name">Your Name :</label>
-    <input id="name" type="text" placeholder="Please enter your name."
-    onfocus="hightlight(this)" onblur="unhightlight(this)">
+    <h2 id="display"></h2>
+
+    <label for="menu">Select Your Language :</label>
+    <select name="" id="menu" onchange="getmenu()">
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Bootstrap">Bootstrap</option>
+    </select>
 
     <!-- External JavaScript -->
     <script src="app.js"></script>
