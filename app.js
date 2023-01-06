@@ -1,9 +1,18 @@
-// DOM Event
+// EventListener
 
- function setBold(obj){
-    obj.style.fontWeight = "bold";
+ const menu = document.getElementById('menu');
+ const display = document.getElementById('display');
+ const btn = document.getElementById('btn')
+
+
+ menu.addEventListener('change', getMenu);
+ btn.addEventListener('click', clearDispley);
+ 
+
+ function getMenu(){
+   display.innerText = menu.value
  };
 
- function unBold(obj){
-    obj.style.fontWeight = "normal";
+ function clearDispley(){
+   display.innerText = ''
  };

@@ -14,8 +14,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a href="" onmouseover="setBold(this)" onmouseout="unBold(this)">Menu 1</a>
-    <a href="" onmouseover="setBold(this)" onmouseout="unBold(this)">Menu 2</a>
+    <h3 id="display"></h3>
+
+    <label for="menu">Please select :</label>
+    <select id="menu">
+        <option value="JavaScript">JavaScript</option>
+        <option value="Python">Python</option>
+        <option value="Bootstrap">Bootstrap</option>
+    </select>
+    <button id="btn">Clear</button>
 
     <!-- External JavaScript -->
     <script src="app.js"></script>
